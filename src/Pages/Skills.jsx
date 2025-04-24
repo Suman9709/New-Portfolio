@@ -47,7 +47,7 @@ const Skills = () => {
 
   return (
     <section id='skills' className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
-      {/* Animated background elements */}
+
       <motion.div
         variants={backgroundVariants}
         animate="animate"

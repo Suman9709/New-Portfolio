@@ -12,11 +12,9 @@ const HeroPage = () => {
 
     return (
         <div className='w-full relative z-10'>
-            {/* Navbar Fixed to Top */}
             <div className='top-0 left-0 right-0 w-full fixed flex justify-center z-100'>
                 <div className='w-full max-w-7xl px-6 py-4 flex justify-between items-center'>
 
-                    {/* Center Navbar */}
                     <div className='flex-1 flex justify-center'>
                         <GooeyNav
                             items={items}
@@ -29,17 +27,14 @@ const HeroPage = () => {
                             colors={[1, 2, 3, 1, 2, 3, 1, 4]}
                         />
                     </div>
-
-                    {/* Right Logo */}
                     <div className='w-[100px] h-[100px] flex justify-center items-center'>
                         <img src="/logo-right.png" alt="Logo Right" className='w-full h-auto object-contain' />
                     </div>
                 </div>
             </div>
 
-            {/* Hero Section */}
             <section className='w-full flex flex-col md:flex-row items-center justify-between px-10 pt-[150px] max-w-7xl mx-auto'>
-                {/* Left Side */}
+
                 <div className='w-full md:w-1/2 text-white'>
                     <h1 className='text-5xl font-bold mb-4'>
                         Suman <span className='text-red-600'>Kumar</span>
@@ -51,27 +46,14 @@ const HeroPage = () => {
                         I specialize in building fast, responsive, and scalable web applications using the latest technologies. With a strong foundation in full-stack development, I transform ideas into real-world digital experiences.
                     </p>
 
-                    {/* Skills List */}
-                    <div className='mb-6'>
-                        <h4 className='text-xl font-semibold mb-2 text-red-500'>Technologies I Work With:</h4>
-                        <ul className='list-disc list-inside text-gray-300 space-y-1'>
-                            <li>MongoDB, Express.js, React.js, Node.js</li>
-                            <li>Tailwind CSS, Bootstrap, Sass</li>
-                            <li>RESTful APIs, JWT Auth, Redux Toolkit</li>
-                            <li>Git, GitHub, Netlify, Vercel</li>
-                        </ul>
-                    </div>
-
-                    {/* Call to Action Button */}
                     <a
-                        href='#contact'
+                        href='#Contacts'
                         className='inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition'
                     >
                         Let's Work Together
                     </a>
                 </div>
 
-                {/* Right Side */}
                 <div className='w-full md:w-1/2 mt-10 md:mt-0 flex justify-center'>
                     <img
                         src={img12}
