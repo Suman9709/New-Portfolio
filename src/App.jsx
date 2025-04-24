@@ -4,6 +4,7 @@ import Particles from './Components/Particles'
 import Skills from './Pages/Skills'
 import Projects from './Pages/Projects'
 import ContactPage from './Pages/ContactPage'
+import Footer from './Pages/Footer'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Skills/>
         <Projects/>
         <ContactPage/>
+        <Footer/>
       </div>
     </div>
   )
