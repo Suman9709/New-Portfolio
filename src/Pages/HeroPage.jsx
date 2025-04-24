@@ -1,6 +1,7 @@
 import React from 'react';
 import GooeyNav from '../Components/GooeyNav';
 import img12 from '../Images/img12.png';
+import imglogo from '../Images/imglogo.png'
 
 const HeroPage = () => {
     const items = [
@@ -13,9 +14,9 @@ const HeroPage = () => {
     return (
         <div className='w-full relative z-10'>
             <div className='top-0 left-0 right-0 w-full fixed flex justify-center z-100'>
-                <div className='w-full max-w-7xl px-6 py-4 flex justify-between items-center'>
+                <div className='w-full max-w-7xl px-6 flex justify-between items-center '>
 
-                    <div className='flex-1 flex justify-center'>
+                    <div className='flex-1 flex justify-center bg-black h-20  items-center rounded-lg'>
                         <GooeyNav
                             items={items}
                             particleCount={15}
@@ -27,9 +28,14 @@ const HeroPage = () => {
                             colors={[1, 2, 3, 1, 2, 3, 1, 4]}
                         />
                     </div>
-                    <div className='w-[100px] h-[100px] flex justify-center items-center'>
-                        <img src="/logo-right.png" alt="Logo Right" className='w-full h-auto object-contain' />
+                    <div className="w-[100px] h-[100px] p-2 bg-white rounded-full shadow-lg flex justify-center items-center">
+                        <img
+                            src={imglogo}
+                            alt="Logo"
+                            className="w-full h-full object-contain rounded-full transition-transform duration-300 hover:scale-105"
+                        />
                     </div>
+
                 </div>
             </div>
 
